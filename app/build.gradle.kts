@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "money.android.chureup"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "money.android.chureup"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -66,4 +66,14 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // material
+    implementation("com.google.android.material:material:1.12.0")
+
+    // retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+
+    // kotlinx serialization, retrofit json converter
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.0")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
 }
