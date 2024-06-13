@@ -78,5 +78,4 @@ dependencies {
 
     // kotlinx serialization, retrofit json converter
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.0")
-    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
 }
